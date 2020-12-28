@@ -13,8 +13,8 @@ void print();
 int main()
 {
     int i = 0,j,c;
-    float sum[4] = { '\0' };
-    float ave[4] = { '\0' };
+    int sum[4] = { '\0' };
+    double ave[4] = { '\0' };
     int a;
     print();
     student temp = { '\0' };
@@ -95,7 +95,7 @@ int main()
                 printf("ave:score[%d]=%f\t",m, ave[m]);
                 printf("\n");
             }
-            printf("\n");//
+            printf("\n");
         }
         printf("«Î ‰»Î1 £¨2 £¨3, 4\n");
     }
