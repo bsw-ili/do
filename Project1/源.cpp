@@ -8,6 +8,7 @@ struct student
     char name[30];
     char sex;
     int score[4];
+    int he;
 };
 void print();
 int main()
@@ -59,13 +60,16 @@ int main()
             }
             for (int m= 0; m < i; m++)
             {
+                stu[m].he = 0;
                 printf("%d\t", stu[m].ID);
                 printf("%s\t", stu[m].name);
                 printf("%c\t", stu[m].sex);
                 for (int j = 0; j < 4; j++)
                 {
+                    stu[m].he += stu[m].score[j];
                     printf("%d\t", stu[m].score[j]);
                 }
+                printf("%d", stu[m].he);
                 printf("\n");
             }
             printf("\n");
@@ -109,5 +113,6 @@ void print()
     printf("3.展示信息\n");
     printf("4.各科平均值\n");
     printf("请输入1，2，3, 4\n");
+
 }
    
