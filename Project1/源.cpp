@@ -95,7 +95,7 @@ int main()
                 printf("ave:score[%d]=%f\t",m, ave[m]);
                 printf("\n");
             }
-            printf("\n");
+            printf("\n");//
         }
         printf("«Î ‰»Î1 £¨2 £¨3, 4\n");
     }
